@@ -37,8 +37,7 @@ class F1DataStreamer:
             self.producer = None
             raise
         
-    def stream_data(self):  # <--- FIXED INDENTATION: Now properly nested inside the class
-        # Adding a browser-like User-Agent to bypass OpenF1's bot block filters
+    def stream_data(self):
         headers = {
             "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
         }
